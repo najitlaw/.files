@@ -4,3 +4,4 @@ alias sm="~/scripts/notebookonly.sh"
 alias ssh='~/home/jan/Applications/colorize/colorize -b 0x520500 -- ssh'
 alias vpn="/opt/cisco/anyconnect/bin/vpnui"
 alias radiox="vlc /home/jan/RadioX.m3u"
+alias gpush="git push origin master"
