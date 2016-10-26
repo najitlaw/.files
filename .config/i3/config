@@ -207,5 +207,5 @@ bindsym $mod+o exec i3-msg move workspace to output left
 bindsym $mod+u exec i3-msg move workspace to output right
 
 # Printscreen
-bindsym Print exec shutter -s -c -e
+bindsym Print exec shutter -s -o '~/Documents/Screenshots/%Y-%m-%d_%T.png'
 bindsym $mod+Print exec shutter -w -c
