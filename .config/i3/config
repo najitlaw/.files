@@ -195,7 +195,7 @@ exec --no-startup-id nm-applet
 
 # Autostart
 exec --no-startup-id i3-msg 'workspace '$workspace1'; exec i3-sensible-terminal'
-exec --no-startup-id i3-msg 'workspace '$workspace1'; i3-sensible-terminal -e htop'
+exec --no-startup-id i3-msg 'workspace '$workspace1'; exec i3-sensible-terminal -e htop'
 exec --no-startup-id i3-msg 'workspace '$workspace2'; exec /usr/bin/firefox'
 exec --no-startup-id i3-msg 'workspace '$workspace3'; exec /usr/bin/thunar'
 exec --no-startup-id i3-msg 'workspace '$workspace4'; exec /usr/bin/vmware'
