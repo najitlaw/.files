@@ -93,11 +93,11 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 set $workspace1 "1:   Terminals"
-set $workspace2 "2:   Browser"
+set $workspace2 "2:   Browser"
 set $workspace3 "3:   Files"
 set $workspace4 "4:   VMs"
 set $workspace5 "5:   Mail"
-set $workspace6 "6:  Chat"
+set $workspace6 "6:   Chat"
 set $workspace10 "10:  VPN"
 
 # switch to workspace
@@ -196,7 +196,7 @@ exec --no-startup-id nm-applet
 # Autostart
 exec --no-startup-id i3-msg 'workspace '$workspace1'; exec i3-sensible-terminal'
 exec --no-startup-id i3-msg 'workspace '$workspace1'; exec i3-sensible-terminal -e htop'
-exec --no-startup-id i3-msg 'workspace '$workspace2'; exec /usr/bin/firefox'
+exec --no-startup-id i3-msg 'workspace '$workspace2'; exec /usr/bin/chromium-browser'
 exec --no-startup-id i3-msg 'workspace '$workspace3'; exec /usr/bin/thunar'
 exec --no-startup-id i3-msg 'workspace '$workspace4'; exec /usr/bin/vmware'
 exec --no-startup-id i3-msg 'workspace '$workspace5'; exec /usr/bin/evolution'
@@ -206,6 +206,7 @@ exec --no-startup-id i3-msg 'workspace '$workspace10'; exec /opt/cisco/anyconnec
 # Move slected Workspace to the next Output
 bindsym $mod+o exec i3-msg move workspace to output left
 bindsym $mod+u exec i3-msg move workspace to output right
+bindsym $mod+y exec i3-msg move workspace to output right
 
 # Printscreen
 bindsym Print exec shutter -s -o '~/Documents/Screenshots/%Y-%m-%d_%T.png'
