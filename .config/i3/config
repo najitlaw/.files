@@ -98,6 +98,7 @@ set $workspace3 "3:   Files"
 set $workspace4 "4:   VMs"
 set $workspace5 "5:   Mail"
 set $workspace6 "6:   Chat"
+set $workspace7 "7:   Development"
 set $workspace10 "10:  VPN"
 
 # switch to workspace
@@ -107,7 +108,7 @@ bindsym $mod+3 workspace $workspace3
 bindsym $mod+4 workspace $workspace4
 bindsym $mod+5 workspace $workspace5
 bindsym $mod+6 workspace $workspace6
-bindsym $mod+7 workspace 7
+bindsym $mod+7 workspace $workspace7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace $workspace10
@@ -119,7 +120,7 @@ bindsym $mod+Shift+3 move container to workspace $workspace3
 bindsym $mod+Shift+4 move container to workspace $workspace4
 bindsym $mod+Shift+5 move container to workspace $workspace5
 bindsym $mod+Shift+6 move container to workspace $workspace6
-bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+7 move container to workspace $workspace7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace $workspace10
@@ -195,7 +196,7 @@ exec --no-startup-id nm-applet
 
 # Autostart
 exec --no-startup-id i3-msg 'workspace '$workspace1'; exec i3-sensible-terminal'
-exec --no-startup-id i3-msg 'workspace '$workspace1'; exec i3-sensible-terminal -e htop'
+exec --no-startup-id i3-msg 'workspace '$workspace1'; exec i3-sensible-terminal -e watch --color -t /usr/local/bin/bitcoingraph.sh'
 exec --no-startup-id i3-msg 'workspace '$workspace2'; exec /usr/bin/chromium-browser'
 exec --no-startup-id i3-msg 'workspace '$workspace3'; exec /usr/bin/thunar'
 exec --no-startup-id i3-msg 'workspace '$workspace4'; exec /usr/bin/vmware'
@@ -204,8 +205,6 @@ exec --no-startup-id i3-msg 'workspace '$workspace6'; exec /usr/bin/pidgin'
 exec --no-startup-id i3-msg 'workspace '$workspace10'; exec /opt/cisco/anyconnect/bin/vpnui'
 
 # Move slected Workspace to the next Output
-bindsym $mod+o exec i3-msg move workspace to output left
-bindsym $mod+u exec i3-msg move workspace to output right
 bindsym $mod+y exec i3-msg move workspace to output right
 
 # Printscreen
