@@ -1,6 +1,5 @@
 alias remotef="rdesktop -u administrator -k de-ch -g 1680x1050 -r clipboard:PRIMARYCLIPBOARD -r disk:pika=~/ts_share"
 alias mm="~/scripts/multimonitor.sh"
-alias mm2="~/scripts/multimonitor2.sh"
 alias ssh="~/Applications/colorize/colorize -b 0x520500 -- ssh"
 alias vpn="/usr/local/bin/barracudavpn"
 alias radiox="vlc ~/RadioX.m3u &"
