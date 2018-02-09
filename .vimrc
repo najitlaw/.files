@@ -1,6 +1,6 @@
 set nocompatible              " be iMproved, requiredirl
 filetype off                  " required
-
+syntax on
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -60,4 +60,3 @@ set showmatch
 " improve searching
 set incsearch
 set hlsearch
-
