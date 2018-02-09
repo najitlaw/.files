@@ -14,7 +14,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 
 " solarized
-Plugin 'altercation/vim-colors-solarized'
+" Plugin 'altercation/vim-colors-solarized'
 
 " vim-airline
 Plugin 'vim-airline/vim-airline'
@@ -27,14 +27,9 @@ set laststatus=2
 " fugitive (git)
 Plugin 'tpope/vim-fugitive'
 
-" indent
-Plugin 'nathanaelkane/vim-indent-guides'
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_start_level = 1
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
+"filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
@@ -47,15 +42,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" theme
-set term=xterm-256color
-syntax on
-set background=dark
-colorscheme solarized
-
 " tabs and spaces
-set tabstop=4 " number of visual spaces per tab
-set softtabstop=4 " number of spaces inserted when editing
+set tabstop=2 " number of visual spaces per tab
+set softtabstop=2 " number of spaces inserted when editing
 set expandtab " all tabs are converted to spaces
 
 " visuals

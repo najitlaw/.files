@@ -212,3 +212,5 @@ bindsym Print exec shutter -s -o '~/Documents/Screenshots/%Y-%m-%d_%T.png'
 bindsym $mod+Print exec shutter -w -c
 
 assign [class="Pidgin"] $workspace6
+
+new_window 1pixel
